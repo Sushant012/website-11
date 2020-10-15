@@ -7,21 +7,21 @@ date: 2020-06-19
 summary: 📦 Parcel 2 beta 1 - improved stability, tree shaking, source map performance, and more! 🚀
 ---
 
-The Parcel team is super excited to release the first beta of Parcel 2 today! This marks the first Parcel 2 release that’s more stable than our nightly and alpha releases, and our commitment to avoid changing most user facing APIs. Please try it out and give us your feedback on Github!
+The Parcel team is super excited to release the first beta of Parcel 2 today! This marks the first Parcel 2 release that’s more stable than our nightly and alpha releases, and our commitment to avoid changing most user-facing APIs. Please try it out and give us your feedback on Github!
 
 ![](banner.png)
 
 It’s been a while since our last alpha release, and there has been a ton of active development on Parcel 2 in the meantime. We’ve been focusing on **stability**, **performance**, and **reliability** as we prepare for our stable v2 release, but we’ve managed to sneak in a few new features too!
 
-- **🌳 Improved tree shaking** — Parcel’s tree shaking implementation has improved tremendously since the last alpha release. In addition to a ton of bug fixes and performance improvements, Parcel 2 now produces source maps for tree shaken bundles, and displays friendly error messages when you reference an unknown symbol.
+- **🌳 Improved tree shaking** — Parcel’s tree shaking implementation has improved tremendously since the last alpha release. In addition to a ton of bug fixes and performance improvements, Parcel 2 now produces source maps for tree shaken bundles and displays friendly error messages when you reference an unknown symbol.
 
-- **🗺 Faster source map generation**— Parcel now has a brand new [source map module](https://github.com/parcel-bundler/source-map), hand tuned for our specific usecases. It’s written in C++ for performance, and is **~20x faster** at combining source maps from multiple files!
+- **🗺 Faster source map generation**— Parcel now has a brand new [source map module](https://github.com/parcel-bundler/source-map), hand-tuned for our specific use-cases. It’s written in C++ for performance, and is **~20x faster** at combining source maps from multiple files!
 
 - **#️⃣ Improved content hashing**— Parcel now has more reliable content hashing support for long term cacheability of bundles. In addition, Parcel 2 now avoids cascading invalidation by only updating a manifest in entry bundles rather than all referencing bundles.
 
 - **🚨 Resolver diagnostics**— Parcel 2 now supports friendly error messages when it cannot find a module you’ve referenced in your code. These include a detailed code frame showing where the error occurred, along with suggestions on how you might be able to fix the issue.
 
-- **📊 More accurate bundle reports**— The bundle reports that Parcel generates in your CLI at the end of a production build are now more accurate. They are now based on source maps, and exclude code that has been removed during tree shaking and minification for more accurate file sizes.
+- **📊 More accurate bundle reports**— The bundle reports that Parcel generates in your CLI at the end of a production build are now more accurate. They are now based on source maps and exclude code that has been removed during tree shaking and minification for more accurate file sizes.
 
 - **🐞 Tons of bugfixes and improvements** — This release includes countless bugfixes and stability improvements. The team has been working hard on testing Parcel 2 against some very large applications, and we’re excited to see how it works for you.
 
